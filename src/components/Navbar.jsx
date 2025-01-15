@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -14,7 +15,7 @@ const Navbar = () => {
     <div className='h-full flex items-center justify-between px-4 sm:px-8 md:12 lg:20 xl:px-48'>
       
       {/* LINKS */}
-      <div className="hidden md:flex gap-4">
+      <div className="hidden md:flex gap-4 w-1/3">
         {
           links.map((link) => (
             <Link href={link.url} key={link.titles}>{link.titles}</Link>
@@ -23,10 +24,35 @@ const Navbar = () => {
       </div>
 
       {/* LOGO */}
-      <div className="md:hidden">
+      <div className="md:hidden lg:flex w-1/3 justify-center">
         <Link href='/' className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center gap-1'>
         <span className='text-white'>Ramsey</span>
         <span className='w-12 h-8 rounded bg-white text-black flex justify-center items-center'>Dev</span>
+        </Link>
+      </div>
+
+      {/* SOCIAL */}
+      <div className="hidden md:flex gap-4 w-1/3">
+        <Link href='/'>
+          <Image src='/github.png' alt='' width={24} height={24} />
+        </Link>
+        <Link href='/'>
+          <Image src='/github.png' alt='' width={24} height={24} />
+        </Link>
+        <Link href='/'>
+          <Image src='/dribble.png' alt='' width={24} height={24} />
+        </Link>
+        <Link href='/'>
+          <Image src='/instagram.png' alt='' width={24} height={24} />
+        </Link>
+        <Link href='/'>
+          <Image src='/facebook.png' alt='' width={24} height={24} />
+        </Link>
+        <Link href='/'>
+          <Image src='/pinterest.png' alt='' width={24} height={24} />
+        </Link>
+        <Link href='/'>
+          <Image src='/linkedin.png' alt='' width={24} height={24} />
         </Link>
       </div>
 
