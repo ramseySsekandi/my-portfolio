@@ -3,7 +3,7 @@ import React from 'react'
 
 const Homepage = () => {
   return (
-    <div className='h-full flex flex-col px-4 sm:px-8 md:px-12 lg:flex-row lg:px-20 xl:px-48'>
+    <div className='pb-4 h-full flex flex-col px-4 sm:px-8 md:px-12 lg:flex-row lg:px-20 xl:px-48'>
       {/* IMAGE CONTAINER */}
       <div className="relative h-1/2 lg:h-full lg:w-1/2">
         <Image src='/hero.png' alt='' fill className='object-contain'/>
