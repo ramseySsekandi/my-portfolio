@@ -5,12 +5,12 @@ const Homepage = () => {
   return (
     <div className='pb-4 h-full flex gap-1 flex-col px-4 sm:px-8 md:px-12 lg:flex-row lg:px-20 xl:px-48'>
       {/* IMAGE CONTAINER */}
-      <div className="relative h-2/5 lg:h-full lg:w-1/2">
+      <div className="relative h-1/2 lg:h-full lg:w-1/2">
         <Image src='/hero.png' alt='' fill className='object-contain'/>
       </div>
 
       {/* TEXT CONTAINER */}
-      <div className=" h-3/5 flex flex-col gap-2 lg:gap-8 items-center justify-center lg:h-full lg:w-1/2">
+      <div className=" h-1/2 flex flex-col gap-3 lg:gap-8 items-center justify-center lg:h-full lg:w-1/2">
         {/* TITLE */}
         <h1 className='text-2xl sm:text-3xl font-bold md:text-4xl'>Creating Digital Experiences, Designing Tomorrow.</h1>
         {/* DESC */}

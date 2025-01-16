@@ -111,9 +111,9 @@ const Navbar = () => {
       <div className="md:hidden">
         {/* MENU BUTTON */}
         <button className='w-4 h-4 sm:w-10 sm:h-8 flex flex-col justify-between z-50 relative' onClick={()=>setOpen((prev) => !prev)}>
-          <motion.div variants={topVariants} animate={open ? 'opened':'closed'} className="w-4 sm:w-10 h-1 bg-black rounded origin-left" ></motion.div>
-          <motion.div variants={centerVariants} animate={open ? 'opened':'closed'} className="w-4 sm:w-10 h-1 bg-black rounded"></motion.div>
-          <motion.div variants={bottomVariants} animate={open ? 'opened':'closed'} className="w-4 sm:w-10 h-1 bg-black rounded origin-left"></motion.div>
+          <motion.div variants={topVariants} animate={open ? 'opened':'closed'} className="w-5 h-[2px] sm:w-10 sm:h-1 bg-black rounded origin-left" ></motion.div>
+          <motion.div variants={centerVariants} animate={open ? 'opened':'closed'} className="w-5 h-[2px] sm:w-10 sm:h-1 bg-black rounded"></motion.div>
+          <motion.div variants={bottomVariants} animate={open ? 'opened':'closed'} className="w-5 h-[2px] sm:w-10 sm:h-1 bg-black rounded origin-left"></motion.div>
         </button>
         {/* MENU LIST */}
         {open && (
