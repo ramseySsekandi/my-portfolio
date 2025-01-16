@@ -81,7 +81,7 @@ const Navbar = () => {
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link href='/' className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center gap-1'>
         <span className='text-white'>Ramsey</span>
-        <span className='w-12 h-8 rounded bg-white text-black flex justify-center items-center'>Dev</span>
+        <span className='w-8 h-6 sm:w-12 sm:h-8 rounded bg-white text-black flex justify-center items-center'>Dev</span>
         </Link>
       </div>
 
@@ -110,10 +110,10 @@ const Navbar = () => {
       {/* RESPONSIVE MENU */}
       <div className="md:hidden">
         {/* MENU BUTTON */}
-        <button className='w-10 h-8 flex flex-col justify-between z-50 relative' onClick={()=>setOpen((prev) => !prev)}>
-          <motion.div variants={topVariants} animate={open ? 'opened':'closed'} className="w-10 h-1 bg-black rounded origin-left" ></motion.div>
-          <motion.div variants={centerVariants} animate={open ? 'opened':'closed'} className="w-10 h-1 bg-black rounded"></motion.div>
-          <motion.div variants={bottomVariants} animate={open ? 'opened':'closed'} className="w-10 h-1 bg-black rounded origin-left"></motion.div>
+        <button className='w-4 h-4 sm:w-10 sm:h-8 flex flex-col justify-between z-50 relative' onClick={()=>setOpen((prev) => !prev)}>
+          <motion.div variants={topVariants} animate={open ? 'opened':'closed'} className="w-4 sm:w-10 h-1 bg-black rounded origin-left" ></motion.div>
+          <motion.div variants={centerVariants} animate={open ? 'opened':'closed'} className="w-4 sm:w-10 h-1 bg-black rounded"></motion.div>
+          <motion.div variants={bottomVariants} animate={open ? 'opened':'closed'} className="w-4 sm:w-10 h-1 bg-black rounded origin-left"></motion.div>
         </button>
         {/* MENU LIST */}
         {open && (
