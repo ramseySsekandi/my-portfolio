@@ -4,11 +4,11 @@ import {motion} from 'framer-motion'
 
 const Homepage = () => {
   return (
-    <motion.div className='h-full' initial={{y:-200}} animate={{y:"0%"}} transition={{duration:1}}>
+    <motion.div className='h-full' initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
 
     <div className='pb-4 h-full flex gap-1 flex-col px-4 sm:px-8 md:px-12 lg:flex-row lg:px-20 xl:px-48'>
       {/* IMAGE CONTAINER */}
-      <div className="relative h-1/2 lg:h-full lg:w-1/2">
+      <div className="relative h-1/2 lg:h-[70vh] lg:w-1/2">
         <Image src='/hero.png' alt='' fill className='object-contain'/>
       </div>
 
